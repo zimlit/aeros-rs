@@ -11,7 +11,6 @@ use core::fmt::Write;
 
 #[entry]
 fn uefi_start(_image_handler: uefi::Handle, system_table: SystemTable<Boot>) -> Status {
-
     system_table
         .stdout()
         .reset(false)
